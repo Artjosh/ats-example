@@ -1,7 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
 
+// Pre-create the dummy file that pdf-parse requires on import
+// This runs at module load time (before any request)
+async function ensurePdfParseTestFile() {
+    try {
+        const fs = await import("fs");
+        const path = await import("path");
+        const testDir = path.join(process.cwd(), "test", "data");
+        const testFile = path.join(testDir, "05-versions-space.pdf");
+        if (!fs.existsSync(testFile)) {
+            fs.mkdirSync(testDir, { recursive: true });
+            // Write minimal valid PDF
+            fs.writeFileSync(testFile, "%PDF-1.0\n1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj 2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj 3 0 obj<</Type/Page/MediaBox[0 0 3 3]>>endobj\nxref\n0 4\n0000000000 65535 f \n0000000009 00000 n \n0000000058 00000 n \n0000000115 00000 n \ntrailer<</Size 4/Root 1 0 R>>\nstartxref\n190\n%%EOF\n");
+        }
+    } catch {
+        // Swallow - best effort
+    }
+}
+
+// Run once at module load
+const _init = ensurePdfParseTestFile();
+
 export async function POST(request: NextRequest) {
     try {
+        // Ensure test file is ready before first use
+        await _init;
+
         const formData = await request.formData();
         const files = formData.getAll("files") as File[];
 
@@ -19,7 +43,6 @@ export async function POST(request: NextRequest) {
 
             try {
                 if (file.type === "application/pdf" || file.name.toLowerCase().endsWith(".pdf")) {
-                    // pdf-parse v1.1.1: simple function(buffer) => Promise<{text}>
                     const pdfParse = (await import("pdf-parse")).default;
                     const data = await pdfParse(buffer);
                     text = data.text || "";

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "node -e \"const fs=require('fs'),p='test/data';fs.mkdirSync(p,{recursive:true});fs.existsSync(p+'/05-versions-space.pdf')||fs.writeFileSync(p+'/05-versions-space.pdf','%PDF-1.0 test')\""
   },
   "dependencies": {
     "mammoth": "^1.12.0",
