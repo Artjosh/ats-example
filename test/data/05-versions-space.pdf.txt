@@ -1,0 +1,58 @@
+
+
+Arthur Salvador 
+Desenvolvedor de software
+SENAI • Tecnólogo em analise e desenvolvimento de sistemas 
+LINKEDIN PROFILE
+ EXPERIÊNCIA PROFISSIONAL 
+EXATRON 
+Desenvolvedor de software fullstack IoT
+Desenvolvedor de Automação 
+Desenvolvedor de Integração Blockchain 
+2013– 2017 
+Canoas, RS - Brasil 
+2023 –  2025 
+Porto Alegre - RS, Brasil 
+2016-2023
+Remoto
+2018 - 2021
+Porto Alegre, RS - Brasil
+ Mercado NFT 
+• Construí APIs de backend escaláveis (Node.js/Python) e protótipos fullstack (Next.js/React)
+• Integração integrada de pagamentos fiduciários/criptográficos, bots e contratos inteligentes
+(Solana)
+• Desenvolvimento de microsserviços de mercado NFT, criptografia e bots de automação
+• Desenvolver plataformas full stack conectando front-ends da web a firmware de baixo nível para
+dispositivos inteligentes
+• Liderei projetos React + Redux com JWT, Argon2, criptografia WebSocket RSA/AES, PostgreSQL
+• Projetei sistemas de automação e teste para fluxos de trabalho internos de validação de laboratório
+• Integração de pagamentos com criptomoedas e contratos inteligentes (Solana).
+• Desenvolvimento de microsserviços, criptografia e automações de busca de dados on-chain.
+•Arquitetura baseada em infraestrutura do próprio usuário atraves da minha plataforma, onde cada
+um provisiona e gerencia seu próprio nó de forma automatizada (Terraform/Kubernetes/Docker). O
+acesso é feito via clientes nativos (desktop, mobile) e web, permitindo interagir com o ambiente via
+streaming ou noVNC, sem perder a aceleração gráfica de hardware, caso disponivel.
+EDUCAÇÃO 
+Sistema de teste de laboratório inteligente 
+• Sistema de workflow para testes de dispositivos inteligentes, construído com Node.js e React.
+NTFNERDS 
+- 
+Freelancer
+BLUE CYBERSECURITY 
+• Desenvolvimento de automações de sistemas em Python, JavaScript, AutoHotkey e C++
+• Focado em ferramentas internas e aprimoramentos de automação de jogos
+Principais projetos
+Plataforma gaming cloud descentralizada
+•Linguagens: JavaScript/TypeScript, Python, Go, Php, Rust, Java, C/C++, Bash
+• Frameworks & Libs: Next.js, React, Node.js, Nest.js, Echo, Fiber, Fyne, Wails, GORM, Pandas, OpenCV.
+• Arquitetura & Backend: REST, gRPC, Microsserviços, WebSockets, JWT, Criptografia, Redis (Caching/Messaging), Kafka,
+RabbitMQ.
+• Bancos de Dados: PostgreSQL, MySQL, Redis, MongoDB, Supabase.
+• Automação & Baixo Nível: automação de memória, DLL hooking, disassembly (OllyDbg/Ghidra), web scraping.
+•Cloud & Infra: Terraform, Kubernetes, Docker, streaming de vídeo, virtualização, IaaS (AWS, Oracle e GCP).
+• Blockchain & Web3: EVM, web3.js, Smart Contracts, extração de dados on-chain — BTC, ETH, Solana, Aptos, TON, Polygon.
+• IA : Redes neurais (Perceptron), RAG, MCP Servers, AI Agents, LLM integration, visão computacional, pathfinding (A*
+,
+Dijkstra), Bézier curves, Spline Interpolation, Proto Buffers.
+Canoas, RS - Brasil 92030080 • arthur.heleus.thade@gmail.com • + 55 (51) 86447031
+GITHUB PROFILE

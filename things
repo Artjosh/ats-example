@@ -1,0 +1,17 @@
+https://stitch.withgoogle.com/projects/16025719672834659578
+AIzaSyBIV2ic4PdV6MCMmwbkmY8Q9_uknugQ9iM
+curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent" \
+  -H 'Content-Type: application/json' \
+  -H 'X-goog-api-key: AIzaSyBIV2ic4PdV6MCMmwbkmY8Q9_uknugQ9iM' \
+  -X POST \
+  -d '{
+    "contents": [
+      {
+        "parts": [
+          {
+            "text": "Explain how AI works in a few words"
+          }
+        ]
+      }
+    ]
+  }'
